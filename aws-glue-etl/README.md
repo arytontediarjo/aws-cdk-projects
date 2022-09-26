@@ -1,7 +1,13 @@
 
-# Welcome to your CDK Python project!
+# Welcome to Glue Glue ETL CDK!
 
-This is a blank project for CDK development with Python.
+Tools used:
+- S3
+- Glue
+- Athena
+
+This is a project to create a basic Glue ETL service using Python.
+CDK will streamline the process of resource/role creation and serve it as a CloudFormation template in AWS
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
@@ -23,12 +29,6 @@ step to activate your virtualenv.
 
 ```
 $ source .venv/bin/activate
-```
-
-If you are a Windows platform, you would activate the virtualenv like this:
-
-```
-% .venv\Scripts\activate.bat
 ```
 
 Once the virtualenv is activated, you can install the required dependencies.
