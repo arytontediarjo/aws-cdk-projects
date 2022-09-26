@@ -41,8 +41,12 @@ class AwsGlueEtlStack(Stack):
             self,
             'Glue-Job-Role',
             assumed_by=iam.ServicePrincipal('glue.amazonaws.com'),
-            managed_policies=[iam.ManagedPolicy.from_aws_managed_policy_name(
-                'service-role/AWSGlueServiceRole')]
+            managed_policies=[
+                iam.ManagedPolicy.from_aws_managed_policy_name(
+                'service-role/AWSGlueServiceRole'),
+                iam.ManagedPolicy.from_aws_managed_policy_name(
+                'AmazonS3FullAccess')
+            ]
         )
 
         """
