@@ -6,8 +6,14 @@ Tools used:
 - Glue
 - Athena
 
-This is a project to create a basic Glue ETL service using Python.
-CDK will streamline the process of resource/role creation and serve it as a CloudFormation template in AWS
+This is a project to create a basic Glue ETL service using Python and AWS CDK.
+
+# What happens here:
+- AWS CDK streamlines workflow and creates it as CloudFormation Template
+- Assets contains S3 files and Glue Job (written in PySpark) for Data transformation
+
+
+# How to Run:
 
 The `cdk.json` file tells the CDK Toolkit how to execute your app.
 
@@ -47,7 +53,7 @@ To add additional dependencies, for example other CDK libraries, just add
 them to your `setup.py` file and rerun the `pip install -r requirements.txt`
 command.
 
-## Useful commands
+## Useful commands References
 
  * `cdk ls`          list all stacks in the app
  * `cdk synth`       emits the synthesized CloudFormation template
